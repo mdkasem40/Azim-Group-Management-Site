@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Production Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="header-top flex-center">
+        <img src="images/protracker.jpg" class="protracker-image" alt="">
+        <h2 class="factory-heading">Men's Fashion Limited- 5th</h2>
+        <div class="unit-date">
+            <select name="unit-select" id="unit-select">
+                <option value="Men's Fashion Ltd.">Men's Fashion Ltd.</option>
+                <option value="Global Intimates Ltd.">Global Intimates Ltd</option>
+                <option value="Chittagong Shirt Ltd."></option>
+            </select>
+            <input type="date" class="dateInput" name="date">
+        </div>
+    </div>
+    <div class="header-bottom flex-center">
+        <p class="factory-name">Floor: <strong><span class="factory">MFL-5th (Sewing)</span></strong></p>
+        <h3>PRODUCTION<br>DASHBOARD</h3>
+        <div class="date-time-div">
+            <P class="date-time"><span>15 Dec, 2025 07:06:15</span><i class="fa-solid fa-filter filter-icon"></i></P>
+            <p class="am-pn"><span>PM</span><i class="fa-regular fa-circle-check select-icon"></i></p>
+        </div>
+    </div>
+  </header>
+  
+  
+  <main>
+    <div class="report-lists">
+        <div class="report-list today-input ">
+            <div class="content">
+                <h3 class="title">Taday Input</h3>
+                <i class="fa-solid fa-sort sort-icon"></i>
+                <p class="number">3453</p>
+            </div>
+        </div>
+        <div class="today-output report-list">
+            <div class="content">
+                <h3 class="title">Taday Input</h3>
+                <i class="fa-solid fa-sort sort-icon"></i>
+                <p class="number">3453</p>
+            </div>
+        </div>
+        <div class="today-input report-list">
+            <div class="content">
+                <h3 class="title">Taday Input</h3>
+                <i class="fa-solid fa-sort sort-icon"></i>
+                <p class="number">3453</p>
+            </div>
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+        <div class="today-input report-list">
+
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="production-table">
+        <thead>
+          <tr class="column-head">
+            <th colspan="20">Line Wise Hourly Production</th>
+          </tr>
+          <tr class="head2">
+            <th>Line</th>
+            <th class="large">Buyer</th>
+            <th>Style</th>
+            <th class="teal">Today Input</th>
+            <th class="teal">Total Input</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>5th</th>
+            <th>6th</th>
+            <th>7th</th>
+            <th>8th</th>
+            <th>9th</th>
+            <th>10th</th>
+            <th>11th</th>
+            <th>12th</th>
+            <th class="today">Today Total</th>
+            <th>Total Wip</th>
+            <th class="wip">Today WIP</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td rowspan="6" class="green">L-7</td>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">1541</td>
+            <td class="teal">6543</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>7642</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">864</td>
+            <td class="teal">2456</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>1653</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal"></td>
+            <td class="teal"></td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>1200</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">0</td>
+            <td class="teal">0</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>987</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal"></td>
+            <td class="teal"></td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>1200</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">0</td>
+            <td class="teal">0</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>987</td>
+            <td class="red">8888</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="line-separate">Hourly Total</td>
+            <td class="line-separate">65</td>
+            <td class="line-separate">72</td>
+            <td class="line-separate">67</td>
+            <td class="line-separate">101</td>
+            <td class="line-separate">86</td>
+            <td class="line-separate">106</td>
+            <td class="line-separate">88</td>
+            <td class="line-separate">85</td>
+            <td class="line-separate">104</td>
+            <td class="line-separate">137</td>
+            <td class="line-separate">118</td>
+            <td class="line-separate">169</td>
+            <td colspan="3" class="line-separate"></td>
+          </tr>
+          
+          <tr>
+              <td rowspan="6" class="green">L-8</td>
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal">1541</td>
+              <td class="teal">6543</td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>7642</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal">864</td>
+              <td class="teal">2456</td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>1653</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal"></td>
+              <td class="teal"></td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>1200</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal">0</td>
+              <td class="teal">0</td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>987</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal"></td>
+              <td class="teal"></td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>1200</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              <td>JC PENNEY</td>
+              <td>REGULAR</td>
+              <td class="teal">0</td>
+              <td class="teal">0</td>
+              <td>72</td>
+              <td>67</td>
+              <td>101</td>
+              <td>86</td>
+              <td>106</td>
+              <td>88</td>
+              <td>85</td>
+              <td>104</td>
+              <td>137</td>
+              <td>118</td>
+              <td>169</td>
+              <td class="today">1133</td>
+              <td class="wip green">1281</td>
+              <td>987</td>
+              <td class="red">3522</td>
+            </tr>
+            <tr>
+              <td colspan="5" class="line-separate">Hourly Total</td>
+              <td class="line-separate">65</td>
+              <td class="line-separate">72</td>
+              <td class="line-separate">67</td>
+              <td class="line-separate">101</td>
+              <td class="line-separate">86</td>
+              <td class="line-separate">106</td>
+              <td class="line-separate">88</td>
+              <td class="line-separate">85</td>
+              <td class="line-separate">104</td>
+              <td class="line-separate">137</td>
+              <td class="line-separate">118</td>
+              <td class="line-separate">169</td>
+              <td colspan="3" class="line-separate"></td>
+            </tr>
+            <tr>
+            <td rowspan="2" class="green">L-9</td>
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">1541</td>
+            <td class="teal">6543</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>7642</td>
+            <td class="red">3522</td>
+          </tr>
+          <tr>
+            
+            <td>JC PENNEY</td>
+            <td>REGULAR</td>
+            <td class="teal">864</td>
+            <td class="teal">2456</td>
+            <td>72</td>
+            <td>67</td>
+            <td>101</td>
+            <td>86</td>
+            <td>106</td>
+            <td>88</td>
+            <td>85</td>
+            <td>104</td>
+            <td>137</td>
+            <td>118</td>
+            <td>169</td>
+            <td class="today">1133</td>
+            <td class="wip green">1281</td>
+            <td>1653</td>
+            <td class="red">3522</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+    
+</body>
+</html>

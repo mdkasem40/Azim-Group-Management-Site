@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="azim.css">
+</head>
+<body>
+  <header class="flex-row">
+    <div class="protracker-div">
+      <p class="pro-version">v5.3.12 LTS</p>
+      <div class="protracker-logo">
+        <img src="images/tm-icon.jpg" alt="" class="tm-logo"/>
+        <img src="images/protracker.jpg" alt="" class="logo"/>
+      </div>
+    </div>
+    
+    <div class="azim-div flex-row">
+      <button><i class="fa-solid fa-bars bar-icon"></i></button>
+      <img src="images/azim-logo.jpg" alt="" class="azim-logo"/>
+      <select name="azim-group" id="azim-group">
+        <option value="">AZIM GROUP <i class="fa-solid fa-angle-down down-arrow"></i></option>
+        <option value="">MFL 5th FLOOR</option>
+        <option value="">GLOBAL SHIRTS</option>
+        <option value="">MFL 4th FLOOR</option>
+      </select>
+    </div>
+    
+    <div class="profile-div flex-row">
+      <button class="notification">🔔 <span id="notification-value">3</span></button>
+      <div class="profile-desc">
+        <h3>AZIM GROUP</h3>
+        <address><i class="fa-solid fa-location-dot location-icon"></i> Scout Bhaban 3rd floor 70/1 Inner Circular Road K</address>
+      </div>
+      <div class="profile-image">
+        <span class="small-dot"></span>
+        <img src="images/anisul_islam.jpg" alt="" />
+      </div>
+    </div>
+  </header>
+  
+  
+  <main class="flex-row">
+    <aside class="sidebar">
+      <nav class="nav">
+        <ul>
+          <li>
+            <div class="nav-item parentNav" data-toggle="production">
+              <div class="label"><span><i class="fa-solid fa-desktop nav-icon"></i></span><span class="text">PRODUCTION</span></div>
+              <div class="chev">▾</div>
+            </div>
+            <ul class="hidden" id="production">
+              <li>
+                <div class="nav-item" data-toggle="endlineqc">
+                  <div class="label"><span><i class="fa-solid fa-circle-plus nav-icon"></i></span><span class="text">END LINE QC</span></div>
+                  <div class="chev">▾</div>
+                </div>
+                <ul id="endlineqc" class="hidden">
+                  <li><a class="sub-item" href="#">Line Wise QC Dashboard</a></li>
+                  <li><a class="sub-item" href="#">Defects</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <div class="nav-item" data-toggle="otherprod">
+                  <div class="label"><span class="dot"></span><span class="text">Sewing Droplets</span></div>
+                  <div class="chev">▾</div>
+                </div>
+                <ul id="otherprod" class="hidden">
+                  <li><a class="sub-item" href="#">Sewing Stations</a></li>
+                  <li><a class="sub-item" href="#">Sewing Summary</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          
+          <li>
+            <div class="nav-item parentNav" data-toggle="misreports">
+              <div class="label"><span><i class="fa-solid fa-circle-exclamation nav-icon"></i></span><span class="text">MIS/REPORTS</span></div>
+              <div class="chev">▾</div>
+            </div>
+            <ul id="misreports" class="hidden">
+              <li>
+                <div class="nav-item" data-toggle="protrackerreports">
+                  <div class="label"><span class="dot"></span><span class="text">PROTRACKER Reports</span></div>
+                  <div class="chev">▾</div>
+                </div>
+                <ul id="protrackerreports" class="hidden">
+                  <li><a class="sub-item" href="#">Export Summary</a></li>
+                  <li><a class="sub-item" href="#">Error Logs</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <div class="nav-item" data-toggle="sewingreports">
+                  <div class="label"><span class="dot"></span><span class="text">Sewing Reports</span></div>
+                  <div class="chev">▾</div>
+                </div>
+                <ul id="sewingreports" class="hidden">
+                  <li><a class="sub-item" href="#">Line Wise QC Report</a></li>
+                  <li><a class="sub-item" href="dashboard.html">Hourly Sewing Production</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="skylarksoft-div">
+        <img src="images/Skylarksoft-Logo.png" alt="" class="skylarksoft-logo"/>
+      </div>
+    </aside>
+    
+    
+    <section class="main-content">
+      <ul class="nav-path">
+        <li><span><i class="fa-solid fa-house-user house-icon"></i></span><span><i class="fa-solid fa-greater-than greater-than"></i></span> PRODUCTION</li>
+        <li><span><i class="fa-solid fa-greater-than greater-than"></i></span> Sewing Droplets</li>
+        <li><span><i class="fa-solid fa-greater-than greater-than"></i></span> Sewing Output Scan</li>
+      </ul>
+      <section class="scanning-area">
+        <div class="keyboard-icons">
+          <button><i class="fa-regular fa-keyboard"></i></button>
+          <button><i class="fa-regular fa-face-smile"></i></button>
+          <button><i class="fa-solid fa-bars bar-icon"></i></button>
+          
+        </div>
+        <h3>Sewing Output Scan</h3>
+        <hr />
+        <div class="date">
+          <time datetime="2025-12-10" class="date-time"><strong>10th December 2025</strong></time>
+          <span class="extra-box"></span>
+        </div>
+        <div class="scanning-point">
+          <div class="div1">
+            <label for="unit">Unit <i class="fa-solid fa-star unit-star"></i></label><br>
+            <select name="unit" id="unit">
+              <option value="">Men's Fash...</option>
+              <option value="">Global Shirts</option>
+            </select>
+          </div>
+          <div class="div2">
+            <label for="operator">Operator</label><br>
+            <select name="operator" id="unit">
+              <option value="">Select</option>
+              <option value="">Global Shirts</option>
+            </select>
+          </div>
+          <div class="div3">
+            <input type="number" name="barcode" id="barcode" placeholder="scan barcode here">
+            <p>Challan No: 3643443365</p>
+            <button type="submit" class="close-challan">Close Challan</button>
+          </div>
+          <div class="div4">
+            <button type="reset" class="reject-btn">Reject</button>
+          </div>
+        </div>
+        <div class="table-wrap" role="region" aria-label="production list">
+          <table>
+            <thead>
+              <tr>
+                <th class="c-small">Sl.</th>
+                <th class="c-small">Line No</th>
+                <th class="c-small">Buyer</th>
+                <th class="c-med">Style</th>
+                <th class="c-large">PO</th>
+                <th class="c-med">Color</th>
+                <th class="c-xs">Size</th>
+                <th class="c-xs">Cut.</th>
+                <th class="c-xs">Parent B/No</th>
+                <th class="c-xs">Size SL/No.</th>
+                <th class="c-xs">Body Serial No.</th>
+                <th class="c-xs text-right">After Qty</th>
+                <th class="c-xs text-right">In-Hand</th>
+                <th class="c-xs text-right" id="small">R</th>
+                <th class="c-xs text-right">Sewing Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="muted">89</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>15-15.5 (34/35)</td>
+                <td>1</td>
+                <td>-</td>
+                <td>22</td>
+                <td>22</td>
+                <td class="text-right"></td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">89</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>15-15.5 (34/35)</td>
+                <td>1</td>
+                <td>-</td>
+                <td>22</td>
+                <td>22</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">89</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>15-15.5 (34/35)</td>
+                <td>1</td>
+                <td>-</td>
+                <td>22</td>
+                <td>22</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>JC PENNEY</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              <tr>
+                <td class="muted">88</td>
+                <td class="muted">L-11</td>
+                <td>11111</td>
+                <td>304846-REGULAR</td>
+                <td>300121660450</td>
+                <td>DUSTY ORCHID</td>
+                <td>18-18.5 (34/35)</td>
+                <td>1</td>
+                <td>13</td>
+                <td>213</td>
+                <td>358</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">0</td>
+                <td class="text-right">1</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- table wrap ends here. -->
+        <footer class="footer flex-row">
+          <div class="media-icons flex-row">
+            <span>&copy; Product of <strong>Skylark Soft Limited.</strong> All rights reserved.</span>
+            <button class="getit">Get It</button>
+            <button class="media-btn"><i class="fa-brands fa-youtube media-icon"></i></button>
+            <button class="media-btn"><i class="fa-brands fa-instagram media-icon"></i></button>
+            <button class="media-btn"><i class="fa-brands fa-linkedin-in media-icon" style="background: rgb(21, 91, 243);"></i></button>
+            <button class="media-btn"><i class="fa-brands fa-facebook-f media-icon" style="background: rgb(255, 53, 53);"></i></button>
+          </div>
+          <div class="certified-div flex-row">
+            <span>certified By </span>
+            <button><a href=""><img class="iso-image" src="images/iso.jpg" alt=""></a></button>
+            <button><a href=""><img class="iso-image" src="images/iso.jpg" alt=""></a></button>
+          </div>
+        </footer>
+      </section>
+    </section>
+  </main>
+  
+  
+  <script>
+    document.addEventListener('click', function(e) {
+      const item = e.target.closest('.nav-item');
+      
+      if (!item) return;
+      const id = item.getAttribute('data-toggle');
+      if (!id) return;
+      
+      const panel = document.getElementById(id);
+      if (!panel) return;
+      
+      const li = item.closest('li');
+      const parentUL = li.parentElement;
+      
+      parentUL.querySelectorAll(':scope > li > ul').forEach(function(ul) {
+        if (ul.id !== id) {
+          ul.classList.add('hidden');
+          const parentItem = ul.parentElement.querySelector(':scope > .nav-item');
+          if (parentItem) parentItem.classList.remove('open');
+        }
+      });
+      
+      const open = !panel.classList.contains('hidden');
+      if (open) {
+        panel.classList.add('hidden');
+        item.classList.remove('open');
+      } else {
+        panel.classList.remove('hidden');
+        item.classList.add('open');
+      }
+    });
+    
+    //toggle system on header menubar
+    const barIcon= document.querySelector('.bar-icon');
+    const sidebar= document.querySelector('.sidebar');
+    barIcon.addEventListener('click', (e) => {
+      sidebar.classList.toggle('hidden');
+    })
+  </script>
+</body>
+</html>

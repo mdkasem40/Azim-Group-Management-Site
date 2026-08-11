@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70%;
+}
+body{
+    max-width: 1000px;
+    margin: auto; 
+    box-shadow: 0 0 0.6rem rgb(204, 204, 204);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+button{
+    background: none;
+    color: black;
+    
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header{
+    padding: 1.2rem 0.8rem;
+    gap: 0.5rem;
+    position: sticky;
+    top: -40px;
+    z-index: 5;
+    background: white;
+    box-shadow: 0 0 0.2rem darkgray;
+}
+.protracker-div{
+    flex: 2.4;
+}
+.protracker-div p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.protracker-logo{
+    position: relative;
+}
+.logo{
+    width: 9rem;
+}
+.tm-logo{
+    position: absolute;
+    width: 1.3rem;
+    top: -5px;
+    left: 8.3rem;
+    border-radius: 50%;
+}
+.azim-div{
+    flex: 3.6;
+    gap: 0.8rem;
+}
+.bar-icon{
+    font-size: 15px;
+}
+.azim-logo{
+    width: 8.5rem;
+}
+#azim-group{
+    width: 10rem;
+    background: none;
+    font-size: 14px;
+}
+.profile-div{
+    flex: 6;
+    font-size: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+.notification{
+    font-size: 18px;
+    position: relative;
+    margin-right: 1rem;
+}
+#notification-value{
+    color: white;
+    background: #E77914;
+    border-radius: 0.3rem;
+    padding: 0 0.3rem;
+    box-shadow: 0 0 0.2rem #E77914;
+    font-size: 12px;
+    position: absolute;
+    top: -9px;
+    right: -2px;
+}
+.location-icon{
+    font-size: 18px;
+}
+.profile-desc{
+    text-align: right;
+}
+.profile-desc h3{
+    font-size: 1.2rem;
+}
+.profile-image{
+    position: relative;
+}
+.profile-image img{
+    width: 3rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    
+}
+.small-dot {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #0368BC;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+
+
+main{
+    font-size: 110%;
+    min-height: 130vh;
+}
+.sidebar{
+    flex: 1.1;
+    align-self: flex-start;
+    padding-left: 0.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+}
+
+.parentNav.open{
+    color: white;
+    background: lightskyblue;
+}
+.parentNav.open .nav-icon{
+    color: white;
+}
+.nav-item{display:flex;align-items:center;justify-content:space-between;padding: 8px 6px;border-radius:2px;cursor:pointer}
+;.nav-item:hover{background:#f0f6fb}
+.nav-item .label{display:flex;align-items:center;gap:5px}
+.nav-item .label .dot{width:15px;height:15px;border-radius:50%;background: #4D96D2;display:inline-block;opacity:0.45; margin-bottom: 0.2rem;}
+.nav-item .chev{width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;color: #757575;
+    font-size: 25px;
+    transform:rotate(0);transition:transform .18s}
+.nav-item.open .chev{transform:rotate(180deg)}
+.nav > ul > li > ul{margin: 5px 0 5px 12px;padding-left: 2px;border-left:3px solid rgba(23,129,214,0.12);}
+.nav ul ul ul{margin-left: 12px;padding-left: 8px;border-left:3px solid rgba(23,129,214,0.10)}
+
+.nav ul li .sub-item{display:block;padding: 6px;border-radius:4px;color: lightcoral;}
+.nav ul li .sub-item:hover{background:#fbfdff;color: darkred}
+.nav-icon{
+    color: #01A1CE;
+}
+
+.hidden{display: none}
+.skylarksoft-div{
+    position: sticky;
+    bottom: 4px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+.skylarksoft-logo{
+    width: 14rem;
+}
+
+
+
+.main-content{
+    flex: 3;
+    min-height: 130vh;
+    padding: 1rem 0.3rem 0.3rem 1rem;
+    align-self: flex-start;
+    min-width: 0;
+    background: rgb(204, 204, 204);
+}
+.nav-path li{
+    display: inline-block;
+    font-size: 90%;
+}
+.greater-than{
+    font-size: 9px;
+    margin-left: 0.8rem;
+}
+.main-content .scanning-area{
+    min-height: 124vh;
+    margin-top: 0.8rem;
+    position: relative;
+    overflow-y: auto;
+    background: white;
+}
+.keyboard-icons {
+    position: fixed;
+    top: 12rem;
+    right: max(1rem, calc((100vw - 1000px) / 2 + 1rem));
+    margin-left: auto;
+    padding: 1.2rem 0.7rem;
+    box-shadow: 0 0 1.2rem darkgray;
+    border-radius: 180rem;
+    z-index: 4;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard-icons button i{
+    font-size: 1.6rem;
+}
+.scanning-area h3{
+    padding: 1rem;
+}
+.scanning-area hr{
+    background: lightgray;
+    width: 100%;
+    height: 1px;
+}
+.scanning-area .date{
+    display: flex;
+    align-items: center;
+}
+.scanning-area > div > .date-time{
+    margin: 1rem;
+    padding: 0.8rem;
+    font-size: 1.15rem;
+    background: lightskyblue;
+    color: white;
+    font-weight: bold;
+    width: 16rem;
+}
+.scanning-area .extra-box{
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+    transform: rotate(45deg);
+    background: white;
+    margin-left: -2.2rem;
+}
+.scanning-point{
+    display: flex;
+    gap: 1.3rem;
+    margin: 1rem;
+}
+.div3{
+    text-align: center;
+}
+.scanning-point select{
+    padding: 0.6rem;
+    margin-top: 0.7rem;
+    border: 1px solid lightgray;
+}
+.scanning-point input{
+    padding: 0.6rem;
+    border: 2px solid #EBEBEB;
+    margin: 2rem 0 0.3rem 0;
+}
+.reject-btn{
+    padding: 0.6rem;
+    background: #FF4646;
+    color: white;
+    margin-top: 2rem;
+}
+.close-challan{
+    padding: 0.6rem;
+    background: #00B039;
+    border-radius: 0.3rem;
+    margin: 0.3rem 0;
+    color: white;
+}
+.div1{
+    position: relative;
+}
+.unit-star{
+    color: lightcoral;
+    font-size: 5px;
+    position: absolute;
+    top: -2px;
+    left: 25px;
+}
+
+.table-wrap{
+    width: calc(100% - 1rem);
+    margin: 1.3rem 0 2rem 1rem;
+    overflow: auto;
+    height: 72vh;
+}
+.table-wrap table{
+    white-space: nowrap;
+    min-width: 800px;
+    width: max-content;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    background: rgb(245, 245, 245);
+}
+table thead th{
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, #439CDF, lightskyblue);
+    padding: 13px 7px;
+    white-space: nowrap;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    color: whi;
+}
+table tbody td{
+    padding: 7px;
+    white-space: nowrap;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+
+.footer{
+    justify-content: space-between;
+    font-size: 94%;
+    padding: 1.6rem 1rem;
+}
+.media-icons{
+    gap: 0.3rem;
+}
+.media-icons .media-icon{
+    padding: 0.5rem;
+    background: rgb(34, 29, 43);
+    color: white;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.getit{
+    padding: 0.3rem;
+    background: darkorchid;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    color: white;
+}
+.certified-div{
+    gap: 0.6rem;
+    font-weight: bold;
+}
+.iso-image{
+    width: 3rem;
+}
+
+
+
+/*
+<div class="social-icons flex">
+                        <p>&copy; Product of <strong>Skylark Soft Ltd.</strong> All Rights reserved.</p>
+                        <button class="getit">Get It</button>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-youtube media-icon"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-instagram media-icon"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-linkedin-in media-icon" style="background: rgb(21, 91, 243);"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f media-icon" style="background: rgb(255, 53, 53);"></i></a>
+                    </div>
+                    <div class="certified-div flex">
+                        <p>certified By: </p>
+                        <img src="images/iso.jpg" alt="" class="isoImage">
+                        <img src="images/iso.jpg" alt="" class="isoImage">
+                    </div>
+
+
+
+.footer{
+    margin-top: auto;
+    font-size: 80%;
+    justify-content: space-between;
+}
+.footer p{
+    display: inline-block;
+}
+.social-icons, .certified-div{
+    gap: 0.3rem;
+}
+.isoImage{
+    width: 1.6rem;
+}
+
+*/
