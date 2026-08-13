@@ -7,10 +7,10 @@
 A full time content creator on & web developer  
 🏠   Living: Tampere, Finland  
 
-<img src="./images/facebook.png" width="40" hspace="5">
-<img src="./images/youtube.png" width="40" hspace="5">
-<img src="./images/wordpress.png" width="40" hspace="5">
-<img src="./images/linkedin.png" width="40" hspace="5">
+[<img src="./images/facebook.png" width="40" hspace="5">][website]
+[<img src="./images/youtube.png" width="40" hspace="5">][youtube]
+[<img src="./images/github.png" width="40" hspace="5">][linkedin]
+[<img src="./images/wordpress.png" width="40" hspace="5">][website]
 
 ### 🕵 &nbsp; About Me  
 
