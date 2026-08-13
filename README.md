@@ -82,6 +82,9 @@ Sylhet, Bangladesh.
 London School of Commerce & IT  
 London, England.
 4. Professional Software Engeneering Abu Dhabi,
+5. Software Engineering is the systematic process of designing,  
+developing, testing, deploying, and  
+maintaining software
 
 <br>
 <br>
