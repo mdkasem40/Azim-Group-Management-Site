@@ -1,3 +1,5 @@
 this is 1 line in test1 file 
 this is 2 line in test1 file 
 this is 3 line in test1 file 
+this is 4 line in test1 file 
+this is 4 and 5 lines in test1 file from master 
