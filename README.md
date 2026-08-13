@@ -9,7 +9,7 @@ A full time content creator on & web developer
 
 [<img src="./images/facebook.png" width="40" hspace="5">][website]
 [<img src="./images/youtube.png" width="40" hspace="5">][youtube]
-[<img src="./images/github.png" width="40" hspace="5">][linkedin]
+[<img src="./images/linkedin.png" width="40" hspace="5">][linkedin]
 [<img src="./images/wordpress.png" width="40" hspace="5">][website]
 
 ### 🕵 &nbsp; About Me  
